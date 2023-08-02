@@ -13,16 +13,18 @@ public class User {
     private String username;
     private String password;
     private Integer age;
+    private String gender;
     private String email;
 
     public User() {
     }
 
-    public User(Integer id, String username, String password, Integer age, String email) {
+    public User(Integer id, String username, String password, Integer age, String gender, String email) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.age = age;
+        this.gender = gender;
         this.email = email;
     }
 
@@ -66,6 +68,14 @@ public class User {
         this.email = email;
     }
 
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -73,6 +83,7 @@ public class User {
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 ", age=" + age +
+                ", gender='" + gender + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

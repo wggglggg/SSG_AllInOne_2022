@@ -11,6 +11,8 @@
     <modules>
         <module>ssm_01_mybatis_helloworld</module>
         <module>ssm_02_mybatis_parameter</module>
+        <module>ssm_03_mybatis_resultmap</module>
+        <module>ssm_04_mybatis_dynamicSQL</module>
     </modules>
 
     <properties>
