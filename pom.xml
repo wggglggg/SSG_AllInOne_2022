@@ -13,6 +13,8 @@
         <module>ssm_02_mybatis_parameter</module>
         <module>ssm_03_mybatis_resultmap</module>
         <module>ssm_04_mybatis_dynamicSQL</module>
+        <module>ssm_05_mybatis_catche</module>
+        <module>ssm_06_mybatis_mbg</module>
     </modules>
 
     <properties>
@@ -28,6 +30,18 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.13</version>
         </dependency>
+<!--        &lt;!&ndash; Mybatis EHCache整合包 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.mybatis.caches</groupId>-->
+<!--            <artifactId>mybatis-ehcache</artifactId>-->
+<!--            <version>1.2.3</version>-->
+<!--        </dependency>-->
+<!--        &lt;!&ndash; slf4j日志门面的一个具体实现 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>ch.qos.logback</groupId>-->
+<!--            <artifactId>logback-classic</artifactId>-->
+<!--            <version>1.4.8</version>-->
+<!--        </dependency>-->
 
         <!-- MySQL驱动 -->
         <dependency>
@@ -67,6 +81,44 @@
             <artifactId>druid</artifactId>
             <version>1.2.15</version>
         </dependency>
+
+        <!--分页助手-->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>5.3.3</version>
+        </dependency>
+
+
     </dependencies>
 
+
+    <!--MyBatis的逆向工程-->
+    <!-- 控制Maven在构建过程中相关配置 -->
+    <build>
+    <!-- 构建过程中用到的插件 -->
+        <plugins>
+            <!-- 具体插件，逆向工程的操作是以构建过程中插件形式出现的 -->
+            <plugin>
+                <groupId>org.mybatis.generator</groupId>
+                <artifactId>mybatis-generator-maven-plugin</artifactId>
+                <version>1.4.2</version>
+                <!-- 插件的依赖 -->
+                <dependencies>
+                    <!-- 逆向工程的核心依赖 -->
+                    <dependency>
+                        <groupId>org.mybatis.generator</groupId>
+                        <artifactId>mybatis-generator-core</artifactId>
+                        <version>1.4.2</version>
+                    </dependency>
+                    <!-- MySQL驱动 -->
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>8.0.30</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,4 +1,4 @@
-package com.ssm.mybaties.test;
+package com.ssm.mybatis;
 
 import com.ssm.mybatis.bean.Emp;
 import com.ssm.mybatis.mapper.DynamicSQLMapper;
