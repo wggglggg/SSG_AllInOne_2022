@@ -15,6 +15,7 @@
         <module>ssm_04_mybatis_dynamicSQL</module>
         <module>ssm_05_mybatis_catche</module>
         <module>ssm_06_mybatis_mbg</module>
+        <module>ssm_07_spring_helloworld</module>
     </modules>
 
     <properties>
@@ -89,6 +90,33 @@
             <version>5.3.3</version>
         </dependency>
 
+        <!--spring-->
+        <!--spring context依赖-->
+        <!--当你引入Spring Context依赖之后，表示将Spring的基础依赖引入了-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.0.11</version>
+        </dependency>
+
+        <!--spring aspects依赖-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>6.0.11</version>
+        </dependency>
+        <!--spring jdbc  Spring 持久化层支持jar包-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>6.0.11</version>
+        </dependency>
+        <!-- 数据源 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.15</version>
+        </dependency>
 
     </dependencies>
 

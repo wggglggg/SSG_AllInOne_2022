@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ssm_01_mybatis_helloworld" />
         <module name="ssm_02_mybatis_parameter" />
         <module name="ssm_03_mybatis_resultmap" />
-        <module name="ssm_05_mybatis_catche" />
         <module name="ssm_04_mybatis_dynamicSQL" />
+        <module name="ssm_01_mybatis_helloworld" />
+        <module name="ssm_07_spring_helloworld" />
+        <module name="ssm_05_mybatis_catche" />
         <module name="ssm_06_mybatis_mbg" />
       </profile>
     </annotationProcessing>
