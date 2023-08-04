@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:util="http://www.springframework.org/schema/util" xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="student" class="com.ssm.spring.bean.Student"></bean>
+
+    <bean id="studentTwo" class="com.ssm.spring.bean.Student">
+        <!--
+           property：通过成员变量的set方法进行赋值
+           name：设置需要赋值的属性名（和set方法有关）
+           value：设置为属性所赋的值
+       -->
+        <property name="sid" value="1001"/>
+        <property name="sname" value="张三"/>
+        <property name="age" value="23"/>
+        <property name="gender" value="男"/>
+    </bean>
+
+    <bean id="studentThree" class="com.ssm.spring.bean.Student">
+        <constructor-arg value="1002"/>
+        <constructor-arg value="李四"/>
+        <constructor-arg value="女"/>
+        <constructor-arg value="24" name="age"/>
+    </bean>
+
+    <bean id="studentFive" class="com.ssm.spring.bean.Student">
+        <property name="sid" value="1003"/>
+        <property name="sname">
+
+            <!--
+            <：&lt;
+            >：&gt;
+            CDATA节其中的内容会原样解析<![CDATA[...]]>
+            CDATA节是xml中一个特殊的标签，因此不能写在一个属性中
+        -->
+            <value><![CDATA[<赵六>]]></value>
+        </property>
+        <property name="age">
+            <value>22</value>
+        </property>
+        <property name="gender"><null/></property>
+        <!--ref：引用IOC容器中的某个bean的id-->
+        <!--<property name="clazz" ref="clazzOne"></property>-->
+        <!--级联的方式，要保证提前为clazz属性赋值或者实例化-->
+        <!--<property name="clazz.cid" value="2222"></property>
+        <property name="clazz.cname" value="远大前程班"></property>-->
+        <property name="clazz">
+            <bean id="clazzInner" class="com.ssm.spring.bean.Clazz">
+                <property name="clazzId" value="1005"/>
+                <property name="clazzName" value="前程"/>
+            </bean>
+        </property>
+        <property name="hobby">
+            <array>
+                <value>听音乐</value>
+                <value>看足球</value>
+                <value>玩游戏</value>
+            </array>
+        </property>
+        <property name="teacherMap" ref="teacherMap"/>
+
+    </bean>
+
+    <bean id="clazzOne" class="com.ssm.spring.bean.Clazz">
+        <property name="clazzId" value="1001"/>
+        <property name="clazzName" value="张菲音乐教室"/>
+        <property name="studentList" ref="studentList"/>
+    </bean>
+
+    <bean id="teacherOne" class="com.ssm.spring.bean.Teacher">
+        <property name="tid" value="8001"/>
+        <property name="tname" value="张老师"/>
+    </bean>
+    <bean id="teacherTwo" class="com.ssm.spring.bean.Teacher">
+        <property name="tid" value="8002"/>
+        <property name="tname" value="赵老师"/>
+    </bean>
+
+    <util:list id="studentList">
+        <ref bean="student"/>
+        <ref bean="studentTwo"/>
+        <ref bean="studentThree"/>
+        <ref bean="studentFive"/>
+    </util:list>
+
+    <util:map id="teacherMap">
+        <entry key="8001" value-ref="teacherOne"/>
+        <entry key="8002" value-ref="teacherTwo"/>
+    </util:map>
+
+    <bean id="studentSix" class="com.ssm.spring.bean.Student"
+    p:sid="1006" p:sname="叶蕴仪" p:age="50" p:teacherMap-ref="teacherMap">
+
+    </bean>
+
+
+</beans>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+    <bean id="user" class="com.ssm.spring.bean.User" init-method="initMethod" destroy-method="destroyMethod">
+        <property name="id" value="1001"/>
+        <property name="username" value="池秋美"/>
+        <property name="password" value="ok"/>
+        <property name="age" value="55"/>
+    </bean>
+
+
+    <bean id="myBeanPostProcessor" class="com.ssm.spring.process.MyBeanPostProcessor"/>
+</beans>

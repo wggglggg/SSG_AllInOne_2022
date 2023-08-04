@@ -16,6 +16,8 @@
         <module>ssm_05_mybatis_catche</module>
         <module>ssm_06_mybatis_mbg</module>
         <module>ssm_07_spring_helloworld</module>
+        <module>ssm_08_spring_ioc_xml</module>
+        <module>ssm_09_spring_ioc_annotation</module>
     </modules>
 
     <properties>
@@ -31,18 +33,18 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.13</version>
         </dependency>
-<!--        &lt;!&ndash; Mybatis EHCache整合包 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>org.mybatis.caches</groupId>-->
-<!--            <artifactId>mybatis-ehcache</artifactId>-->
-<!--            <version>1.2.3</version>-->
-<!--        </dependency>-->
-<!--        &lt;!&ndash; slf4j日志门面的一个具体实现 &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>ch.qos.logback</groupId>-->
-<!--            <artifactId>logback-classic</artifactId>-->
-<!--            <version>1.4.8</version>-->
-<!--        </dependency>-->
+        <!--        &lt;!&ndash; Mybatis EHCache整合包 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.mybatis.caches</groupId>-->
+        <!--            <artifactId>mybatis-ehcache</artifactId>-->
+        <!--            <version>1.2.3</version>-->
+        <!--        </dependency>-->
+        <!--        &lt;!&ndash; slf4j日志门面的一个具体实现 &ndash;&gt;-->
+        <!--        <dependency>-->
+        <!--            <groupId>ch.qos.logback</groupId>-->
+        <!--            <artifactId>logback-classic</artifactId>-->
+        <!--            <version>1.4.8</version>-->
+        <!--        </dependency>-->
 
         <!-- MySQL驱动 -->
         <dependency>
@@ -124,7 +126,7 @@
     <!--MyBatis的逆向工程-->
     <!-- 控制Maven在构建过程中相关配置 -->
     <build>
-    <!-- 构建过程中用到的插件 -->
+        <!-- 构建过程中用到的插件 -->
         <plugins>
             <!-- 具体插件，逆向工程的操作是以构建过程中插件形式出现的 -->
             <plugin>
