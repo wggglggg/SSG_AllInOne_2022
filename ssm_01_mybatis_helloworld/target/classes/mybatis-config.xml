@@ -17,7 +17,17 @@
         typeAliases：设置类型别名，即为某个具体的类型设置一个别名
         在MyBatis的范围中，就可以使用别名表示一个具体的类型
     -->
-
+    <typeAliases>
+        <!--
+            type：设置需要起别名的类型
+            alias：设置某个类型的别名
+        -->
+        <!--<typeAlias type="com.atguigu.mybatis.pojo.User" alias="abc"></typeAlias>-->
+        <!--若不设置alias，当前的类型拥有默认的别名，即类名且不区分大小写-->
+        <!--<typeAlias type="com.atguigu.mybatis.pojo.User"></typeAlias>-->
+        <!--通过包设置类型别名，指定包下所有的类型将全部拥有默认的别名，即类名且不区分大小写-->
+<!--        <package name="com.ssm.mybatis.bean"/>-->
+    </typeAliases>
 
     <!--
             environments：配置连接数据库的环境

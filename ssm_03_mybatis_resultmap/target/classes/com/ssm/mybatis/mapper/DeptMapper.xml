@@ -16,7 +16,7 @@
         <id column="dept_id" property="deptId"/>
         <result column="dept_name" property="deptName"/>
         <collection property="empList" column="dept_id"
-                    select="com.ssm.mybatis.mapper.EmpMapper.getDeptAndEmpByStepTwo"/>
+                    select="com.ssm.mybatis.mapper.DynamicSQLMapper.getDeptAndEmpByStepTwo"/>
     </resultMap>
     
     <!--Dept getDeptAndEmpByStepOne(@Param("deptId") Integer deptId);-->
