@@ -18,6 +18,8 @@
         <module>ssm_07_spring_helloworld</module>
         <module>ssm_08_spring_ioc_xml</module>
         <module>ssm_09_spring_ioc_annotation</module>
+        <module>ssm_11_spring_aop</module>
+        <module>ssm_10_spring_proxy</module>
     </modules>
 
     <properties>
