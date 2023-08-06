@@ -20,6 +20,7 @@
         <module>ssm_09_spring_ioc_annotation</module>
         <module>ssm_11_spring_aop</module>
         <module>ssm_10_spring_proxy</module>
+        <module>ssm_12_spring_transaction</module>
     </modules>
 
     <properties>
@@ -120,6 +121,18 @@
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.2.15</version>
+        </dependency>
+        <!-- Spring 测试相关 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>6.0.11</version>
+        </dependency>
+        <!-- 导入 orm 包就可以通过 Maven 的依赖传递性把其他两个也导入 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>6.0.11</version>
         </dependency>
 
     </dependencies>
