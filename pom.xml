@@ -21,12 +21,15 @@
         <module>ssm_11_spring_aop</module>
         <module>ssm_10_spring_proxy</module>
         <module>ssm_12_spring_transaction</module>
+        <module>ssm_13_springmvc_hello</module>
+        <module>ssm_14_springmvc_demo</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <springframework.version>5.3.29</springframework.version>
     </properties>
 
     <dependencies>
@@ -101,20 +104,20 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>6.0.11</version>
+            <version>${springframework.version}</version>
         </dependency>
 
         <!--spring aspects依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
-            <version>6.0.11</version>
+            <version>${springframework.version}</version>
         </dependency>
         <!--spring jdbc  Spring 持久化层支持jar包-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
-            <version>6.0.11</version>
+            <version>${springframework.version}</version>
         </dependency>
         <!-- 数据源 -->
         <dependency>
@@ -126,13 +129,42 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
-            <version>6.0.11</version>
+            <version>${springframework.version}</version>
         </dependency>
         <!-- 导入 orm 包就可以通过 Maven 的依赖传递性把其他两个也导入 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
-            <version>6.0.11</version>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <!-- SpringMVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <!-- ServletAPI -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+
+        <!-- Spring5和Thymeleaf整合包 -->
+        <!--3.0.13最高最适合版本， 再高就无法正常动作 搭配spring5.3.29-->
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring5</artifactId>
+            <version>3.0.13.RELEASE</version>
+        </dependency>
+
+        <!-- 日志 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.4.9</version>
         </dependency>
 
     </dependencies>
