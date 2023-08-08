@@ -23,6 +23,7 @@
         <module>ssm_12_spring_transaction</module>
         <module>ssm_13_springmvc_hello</module>
         <module>ssm_14_springmvc_demo</module>
+        <module>ssm_15_springmvc_rest</module>
     </modules>
 
     <properties>
