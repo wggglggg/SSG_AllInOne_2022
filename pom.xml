@@ -24,6 +24,7 @@
         <module>ssm_13_springmvc_hello</module>
         <module>ssm_14_springmvc_demo</module>
         <module>ssm_15_springmvc_rest</module>
+        <module>ssm_16_springmvc_ajax</module>
     </modules>
 
     <properties>
@@ -168,10 +169,23 @@
             <version>1.4.9</version>
         </dependency>
 
+        <!--导入jackson的依赖-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.2</version>
+        </dependency>
+
+    <!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.5</version>
+        </dependency>
     </dependencies>
 
 
-    <!--MyBatis的逆向工程-->
+        <!--MyBatis的逆向工程-->
     <!-- 控制Maven在构建过程中相关配置 -->
     <build>
         <!-- 构建过程中用到的插件 -->

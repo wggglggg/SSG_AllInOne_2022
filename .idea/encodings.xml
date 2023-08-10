@@ -39,5 +39,11 @@
     <file url="file://$PROJECT_DIR$/ssm_14_springmvc_test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm_15_springmvc_rest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ssm_15_springmvc_rest/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm_16_springmvc_ajax/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm_16_springmvc_ajax/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm_17_springmvc_ajaxText/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm_17_springmvc_ajaxText/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm_18_springmvc_ajax_18/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm_18_springmvc_ajax_18/src/main/resources" charset="UTF-8" />
   </component>
 </project>

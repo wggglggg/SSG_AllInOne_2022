@@ -4,18 +4,23 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/spring_mvc_helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm_17_springmvc_ajaxText" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm_18_springmvc_ajax_18" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ssm_14_springmvc_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm_17_springmvc_ajaxText/ssm_18_springmvc_ajax_18/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring_mvc_helloworld/pom.xml" />
         <option value="$PROJECT_DIR$/ssm_14_springmvc_test/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm_17_springmvc_ajaxText/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm_18_springmvc_ajax_18/pom.xml" />
       </set>
     </option>
   </component>

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ssm_15_springmvc_rest" />
+        <module name="ssm_16_springmvc_ajax" />
         <module name="ssm_02_mybatis_parameter" />
         <module name="ssm_03_mybatis_resultmap" />
         <module name="ssm_09_spring_ioc_annotation" />
@@ -27,6 +28,8 @@
       <module name="demo" target="11" />
       <module name="spring_mvc_helloworld" target="17" />
       <module name="ssm_14_springmvc_test" target="17" />
+      <module name="ssm_17_springmvc_ajaxText" target="17" />
+      <module name="ssm_18_springmvc_ajax_18" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
