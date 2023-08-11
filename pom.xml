@@ -25,6 +25,9 @@
         <module>ssm_14_springmvc_demo</module>
         <module>ssm_15_springmvc_rest</module>
         <module>ssm_16_springmvc_ajax</module>
+        <module>ssm_17_springmvc_extension</module>
+        <module>ssm_18_springmvc_annotation</module>
+        <module>ssm_19_spring_listener</module>
     </modules>
 
     <properties>
@@ -41,6 +44,13 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.13</version>
         </dependency>
+        <!--mybatis和spring的整合包-->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+
         <!--        &lt;!&ndash; Mybatis EHCache整合包 &ndash;&gt;-->
         <!--        <dependency>-->
         <!--            <groupId>org.mybatis.caches</groupId>-->

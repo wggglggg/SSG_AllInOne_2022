@@ -15,11 +15,14 @@
         <module name="ssm_01_mybatis_helloworld" />
         <module name="ssm_14_springmvc_demo" />
         <module name="ssm_08_spring_ioc_xml" />
+        <module name="ssm_19_spring_listener" />
         <module name="ssm_11_spring_aop" />
         <module name="ssm_04_mybatis_dynamicSQL" />
         <module name="ssm_10_spring_proxy" />
         <module name="ssm_13_springmvc_hello" />
         <module name="ssm_07_spring_helloworld" />
+        <module name="ssm_17_springmvc_extension" />
+        <module name="ssm_18_springmvc_annotation" />
         <module name="ssm_05_mybatis_catche" />
         <module name="ssm_06_mybatis_mbg" />
       </profile>
