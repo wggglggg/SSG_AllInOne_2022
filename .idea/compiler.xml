@@ -25,6 +25,7 @@
         <module name="ssm_18_springmvc_annotation" />
         <module name="ssm_05_mybatis_catche" />
         <module name="ssm_06_mybatis_mbg" />
+        <module name="ssm_20_ssm_all_in_one" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>首页</title>
+    </head>
+    <body>
+        <h1>Index.html</h1>
+        <a th:href="@{/employee}">查询员工信息</a><br>
+        <a th:href="@{/employee/page/4}">查询员工的分页信息</a><br>
+        <a th:href="@{/employee/1}">查询某个员工的信息</a>
+        <form th:action="@{/add/employee}" method="get">
+            <input type="submit" value="添加新员工">
+        </form>
+    </body>
+</html>

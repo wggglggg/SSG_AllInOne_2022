@@ -28,6 +28,7 @@
         <module>ssm_17_springmvc_extension</module>
         <module>ssm_18_springmvc_annotation</module>
         <module>ssm_19_spring_listener</module>
+        <module>ssm_20_ssm_all_in_one</module>
     </modules>
 
     <properties>
@@ -48,7 +49,7 @@
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
-            <version>3.0.2</version>
+            <version>2.1.1</version>
         </dependency>
 
         <!--        &lt;!&ndash; Mybatis EHCache整合包 &ndash;&gt;-->
@@ -119,6 +120,12 @@
             <version>${springframework.version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
         <!--spring aspects依赖-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -151,6 +158,11 @@
         </dependency>
 
         <!-- SpringMVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -197,30 +209,30 @@
 
         <!--MyBatis的逆向工程-->
     <!-- 控制Maven在构建过程中相关配置 -->
-    <build>
-        <!-- 构建过程中用到的插件 -->
-        <plugins>
-            <!-- 具体插件，逆向工程的操作是以构建过程中插件形式出现的 -->
-            <plugin>
-                <groupId>org.mybatis.generator</groupId>
-                <artifactId>mybatis-generator-maven-plugin</artifactId>
-                <version>1.4.2</version>
-                <!-- 插件的依赖 -->
-                <dependencies>
-                    <!-- 逆向工程的核心依赖 -->
-                    <dependency>
-                        <groupId>org.mybatis.generator</groupId>
-                        <artifactId>mybatis-generator-core</artifactId>
-                        <version>1.4.2</version>
-                    </dependency>
-                    <!-- MySQL驱动 -->
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>8.0.30</version>
-                    </dependency>
-                </dependencies>
-            </plugin>
-        </plugins>
-    </build>
+<!--    <build>-->
+<!--        &lt;!&ndash; 构建过程中用到的插件 &ndash;&gt;-->
+<!--        <plugins>-->
+<!--            &lt;!&ndash; 具体插件，逆向工程的操作是以构建过程中插件形式出现的 &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.mybatis.generator</groupId>-->
+<!--                <artifactId>mybatis-generator-maven-plugin</artifactId>-->
+<!--                <version>1.4.2</version>-->
+<!--                &lt;!&ndash; 插件的依赖 &ndash;&gt;-->
+<!--                <dependencies>-->
+<!--                    &lt;!&ndash; 逆向工程的核心依赖 &ndash;&gt;-->
+<!--                    <dependency>-->
+<!--                        <groupId>org.mybatis.generator</groupId>-->
+<!--                        <artifactId>mybatis-generator-core</artifactId>-->
+<!--                        <version>1.4.2</version>-->
+<!--                    </dependency>-->
+<!--                    &lt;!&ndash; MySQL驱动 &ndash;&gt;-->
+<!--                    <dependency>-->
+<!--                        <groupId>mysql</groupId>-->
+<!--                        <artifactId>mysql-connector-java</artifactId>-->
+<!--                        <version>8.0.30</version>-->
+<!--                    </dependency>-->
+<!--                </dependencies>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
 </project>
